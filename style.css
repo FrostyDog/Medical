@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto; */
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+}
+
+p {
+  font-size: 12pt;
+
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+margin: 10px;
+padding-left: 5%;
+padding-right: 2%;
+}
