@@ -15,23 +15,129 @@ html {
 body {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #1F252A;
 }
 
 p {
   font-size: 12pt;
-
+  font-family: 'Roboto', sans-serif;
 }
 
-header{
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
   display: flex;
   flex-direction: column;
 }
 
-.top-bar{
+nav {
+  /* background: rgb(232, 232, 232); */
+  /* background: 	#9BBFFF; */
+  /* background: #87D3FF; */
+  padding: 10px 20px 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 15px 20px 15px 20px;
+  color: #1F252A;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: blue;
+  background: white;
+}
+
+.button {
+    background: #339DFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    min-width: 170px;
+    text-align: center;
+}
+
+.button:hover {
+  background: #fff;
+  color: #339DFF;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-margin: 10px;
-padding-left: 5%;
-padding-right: 2%;
+  margin-bottom: 10px;
+  padding: 12px;
+  padding-left: 5%;
+  padding-right: 2%;
+  background-color: rgb(232, 232, 232)
+}
+
+.top-bar a {
+}
+
+.hero {
+  background-image: linear-gradient(rgba(232, 232, 232, 0.1), rgba(232, 232, 232, 0.1)), url("./images/baby-bg-white.jpg");
+  /* Set a specific height */
+  /* height: 500px; */
+  height: 75vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+/* width: 90%;
+margin-left: 10%; */
+}
+
+.hero-text {
+  padding-left: 8%;
+  display: flex;
+  max-width: 60%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.hero-text h2 {
+  margin-top: 10%;
+  color: #339DFF;
+}
+.hero-list{
+  padding-top: 10%;
+}
+
+.hero-text a {
+margin-top: 7%;
+margin-left: 20%;
+font-size: 17px;
+padding: 10px 15px 10px 15px ;
 }
