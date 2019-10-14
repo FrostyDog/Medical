@@ -84,7 +84,7 @@ section {
 
 nav a {
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 15px 20px 15px 20px;
   /* color: #36454f; */
   color: white;
@@ -140,14 +140,14 @@ nav a:hover {
 }
 
 .top-bar a{
-  font-size: 19px;
-  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+  padding: 5px 15px 5px 15px;
 }
 
 .top-bar p {
   color: #36454f;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .hero {
