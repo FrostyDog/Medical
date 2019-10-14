@@ -18,6 +18,7 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   color: #1F252A;
+  background-color: rgba(232, 232, 232, 0.1);
 }
 
 p {
@@ -27,20 +28,37 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial;
+  color: #434343;
 }
 
 h2 {
   font-size: 2.7em;
 }
 
+h3 {
+font-family: "Roboto";
+font-style: normal;
+font-weight: bold;
+font-size: 2.2em;
+margin: 30px;
+line-height: 129%;
+letter-spacing: 0.07em;
+text-transform: uppercase;
+color: #339DFF;
+text-align: center;
+}
+
 h5 {
   font-size: 1.4em;
 }
+
 
 a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 18px;
 }
 
 header {
@@ -54,20 +72,42 @@ nav {
   /* background: #87D3FF; */
   padding: 10px 20px 10px 20px;
   display: flex;
+  /* background:  #f1f1f1; */
+    /* background-color: rgba(105,168,168, 1); */
+  background-color: #339DFF;
   justify-content: center;
+}
+
+section {
+  /* background: rgb(242, 242, 242); */
 }
 
 nav a {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 15px 20px 15px 20px;
-  color: #36454f;
+  /* color: #36454f; */
+  color: white;
+  border-radius: 20px;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: blue;
+  color: black;
   background: white;
+}
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .button {
@@ -93,23 +133,28 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px;
-  padding: 12px;
+  padding: 2px;
   padding-left: 5%;
   padding-right: 2%;
-  background-color: rgb(232, 232, 232)
+  background-color: rgb(252, 252, 252);
+}
+
+.top-bar a{
+  font-size: 19px;
+  padding: 10px 20px 10px 20px;
 }
 
 .top-bar p {
   color: #36454f;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .hero {
-  background-image: linear-gradient(rgba(232, 232, 232, 0.1), rgba(232, 232, 232, 0.1)), url("./images/baby-bg-white.jpg");
+  background-image: linear-gradient(rgba(51,157,255, 0.02), rgba(252, 252, 252, 0.3)), url("./images/baby-bg-white.jpg");
   /* Set a specific height */
   /* height: 500px; */
-  height: 75vh;
+  /* height: 75vh; */
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -132,24 +177,72 @@ margin-left: 10%; */
 .hero-text h2 {
   margin-top: 10%;
   color: #339DFF;
-}
-.hero-list{
-  padding-top: 10%;
+  text-transform: uppercase;
 }
 
-.hero-text a {
+.hero-text h4 {
+text-transform: uppercase;
+font-size: 2em;
+color:black;
+}
+
+.hero-list{
+  padding-top: 3%;
+  text-transform: uppercase;
+}
+
+.hero-text a{
 margin-top: 7%;
 margin-left: 20%;
 font-size: 17px;
 padding: 10px 15px 10px 15px ;
 }
 
+.icons {
+  max-width: 10%;
+  max-height: 10%;
+  margin: 5px;
+  }
+
+
+.about-lp {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-lp p {
+    font-size: 1.5em;
+}
+
+.about-lp img {
+  width: 45%;
+  height: 45%;
+  padding: 20px;
+  border-radius: 400px;
+  padding-bottom: 30px;
+}
+
 .benefits{
-  margin: 5%;
+  padding: 5% 0 5% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-image: linear-gradient(rgba(51,157,255, 0.1), rgba(51,157,255, 0.1)), url("./images/white-curves-bg.jpg"); */
+  /* The image used */
+   background-image: url("./images/brain-bg.png");
+
+   /* Set a specific height */
+   min-height: 500px;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
 }
 
 .benefits h3 {
@@ -167,14 +260,17 @@ padding: 10px 15px 10px 15px ;
   display: flex;
   width: auto;
   max-width: 200px;
+  background: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid #339DFF;
   border-radius: 20px;
-  margin: 5%;
+  margin: 3% 5% 3% 5%;
   text-align: center;
   padding: 10px;
+  max-height: 50%;
+
 }
 
 .benefit-card img {
@@ -188,11 +284,16 @@ padding: 10px 15px 10px 15px ;
   margin-top: 10%;
 }
 
+.benefits a  {
+  font-size: 17px;
+  padding: 10px 15px 10px 15px ;
+}
+
 /* testimonials */
 
 .testimonials{
   padding: 40px 0;
-  background: #f1f1f1;
+  /* background: rgba(196,196,196,0.22); */
   color: #434343;
   text-align: center;
 }
@@ -206,26 +307,26 @@ padding: 10px 15px 10px 15px ;
 .border{
   width: 160px;
   height: 5px;
-  /* background: #6ab04c; */
   background: #339DFF;
   margin: 26px auto;
 }
 
-.row{
+.inner .row{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.col{
+.inner .col{
   flex: 33.33%;
   max-width: 33.33%;
   box-sizing: border-box;
   padding: 15px;
 }
 .testimonial{
-  background: #fff;
+  background: rgba(196,196,196,0.29);
   padding: 30px;
 }
+
 .testimonial img{
   width: 100px;
   height: 100px;
@@ -235,6 +336,7 @@ padding: 10px 15px 10px 15px ;
   font-size: 20px;
   text-transform: uppercase;
   margin: 20px 0;
+  font-weight: bold;
 }
 .stars{
   color: #6ab04c;
@@ -254,4 +356,88 @@ padding: 10px 15px 10px 15px ;
   flex: 100%;
   max-width: 100%;
 }
+}
+
+/* CONTACT FORM */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  font-size: 1.1em;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #339DFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 40%;
+  text-align: center;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: white;
+  color:#339DFF;
+}
+
+/* Add a background color and some padding around the form */
+#contact-form {
+  background-color: #f2f2f2;
+  /* The image used */
+  width: 100%;
+/* background-image: url("./images/white-curves-bg.jpg"); */
+
+   /* Set a specific height */
+   min-height: 500px;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact-form .container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+footer:not(.row .phone) {
+  line-height: 150%;
+  letter-spacing: 0.07em;
+}
+
+footer a {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 5px;
+}
+
+
+footer a:hover{
+  color: #339DFF;
 }
