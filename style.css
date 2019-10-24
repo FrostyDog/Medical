@@ -22,7 +22,7 @@ body {
 }
 
 p {
-  font-size: 12pt;
+  font-size: 14pt;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -114,18 +114,20 @@ nav a:hover {
     background: #339DFF;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    /* font-size: 13px; */
     line-height: 38px;
     border-radius: 50px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    min-width: 170px;
+    padding: 7px 13px;
+    /* min-width: 170px; */
     text-align: center;
 }
 
 .button:hover {
   background: #fff;
   color: #339DFF;
+cursor: pointer;
   box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
 }
 
@@ -192,7 +194,7 @@ color:black;
 }
 
 .hero-text a{
-margin-top: 7%;
+margin-top: 2%;
 margin-left: 20%;
 font-size: 17px;
 padding: 10px 15px 10px 15px ;
@@ -208,6 +210,7 @@ padding: 10px 15px 10px 15px ;
 .about-lp {
   display: flex;
   padding-top: 50px;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
 }
@@ -232,7 +235,7 @@ padding: 10px 15px 10px 15px ;
   align-items: center;
   /* background-image: linear-gradient(rgba(51,157,255, 0.1), rgba(51,157,255, 0.1)), url("./images/white-curves-bg.jpg"); */
   /* The image used */
-   background-image: url("./images/brain-bg.png");
+   background-image: linear-gradient(rgba(150, 150, 150, 0.3), rgba(150, 150, 150, 0.3)), url("./images/brain-bg.png");
 
    /* Set a specific height */
    min-height: 500px;
@@ -259,7 +262,7 @@ padding: 10px 15px 10px 15px ;
 .benefit-card {
   display: flex;
   width: auto;
-  max-width: 200px;
+  max-width: 210px;
   background: #fff;
   flex-direction: column;
   justify-content: center;
@@ -269,7 +272,7 @@ padding: 10px 15px 10px 15px ;
   margin: 3% 5% 3% 5%;
   text-align: center;
   padding: 10px;
-  max-height: 50%;
+  max-height:55%;
 
 }
 
@@ -282,6 +285,8 @@ padding: 10px 15px 10px 15px ;
 
 .benefit-card p {
   margin-top: 10%;
+  max-height: 50%;
+
 }
 
 .benefits a  {
@@ -440,4 +445,28 @@ footer a {
 
 footer a:hover{
   color: #339DFF;
+}
+
+
+/* PAGES */
+
+.pages {
+  background-color: #f2f2f2;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1.7em;
+  margin: 20px;
+}
+
+h2 {
+  color: #559DFF;
+  padding: 2%;
+  text-transform: uppercase;
 }

@@ -1,0 +1,62 @@
+.contact-page {
+  background-image: linear-gradient(rgba(150, 150, 150, 0.3), rgba(150, 150, 150, 0.3)), url("./images/hands-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  padding: 3%;
+}
+
+.container {
+  width: 50%;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 30px;
+}
+
+h4 {
+  font-size: 1.4em;
+  text-align: left;
+  margin-left: 0;
+}
+
+h5 {
+  font-size: 1.2em;
+  text-align: left;
+  margin-left: 0;
+}
+
+.contact-info p {
+  font-size: 1em;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contacts p {
+  margin: 5px;
+}
+
+.contacts p a {
+  font-size: 1em;
+  text-transform: none;
+  text-decoration: none;
+}
