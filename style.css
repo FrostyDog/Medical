@@ -262,7 +262,7 @@ padding: 10px 15px 10px 15px ;
 .benefit-card {
   display: flex;
   width: auto;
-  max-width: 210px;
+  max-width: 250px;
   background: #fff;
   flex-direction: column;
   justify-content: center;
@@ -272,13 +272,13 @@ padding: 10px 15px 10px 15px ;
   margin: 3% 5% 3% 5%;
   text-align: center;
   padding: 10px;
-  max-height:55%;
+  max-height:60%;
 
 }
 
 .benefit-card img {
-  width: 25%;
-  height: 20%;
+  width: 28%;
+  height: 23%;
   margin: 10px;
   align-self: center;
 }
