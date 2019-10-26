@@ -65,7 +65,98 @@ h5 {
 /* TEAM PAGE */
 
 .team-page {
+background-color: #f2f2f2;
+}
 
-  <img src="./images/cygankov.png"> 
+.details-team {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
 
+.details-team h4, .card-details-team h4 {
+  color: #1F252A!important;
+}
+
+.details-team h5, .card-details-team h5 {
+  color: grey;
+}
+
+.doctor-details p{
+  margin: 20px;
+}
+
+.doctor-details {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.consultants{
+  padding-top: 3%;
+}
+
+.person-position {
+  font-style: italic;
+  margin: 0 auto;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.team-card{
+  max-width: 20%;
+  border-radius: 200px;
+  display: flex;
+  width: auto;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid #339DFF; */
+  border-radius: 20px;
+  margin: 1% 2% 1% 2%;
+  text-align: center;
+  padding: 10px;
+  min-height: 300px;
+}
+
+.team-card:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.card-doctor-details p{
+  margin: 5px;
+}
+
+.card-details-team {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-details-team p {
+  font-size: 10pt;
+}
+
+.team-card .details-team {
+  text-align: center;
+}
+
+.team-card h4 {
+  font-size: 1em;
+  text-align: center;
+}
+
+.team-card h5 {
+font-size: 0.8em;
+text-align: center;
+}
+
+.team-card img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }

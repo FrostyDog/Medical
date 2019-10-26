@@ -428,6 +428,7 @@ footer {
   font-size: 1.6em;
   font-style: normal;
   font-weight: normal;
+  padding-top: 20px;
 }
 
 footer:not(.row .phone) {
@@ -441,6 +442,10 @@ footer a {
   font-weight: normal;
   margin: 5px;
 }
+
+/* footer a:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+} */
 
 
 footer a:hover{
