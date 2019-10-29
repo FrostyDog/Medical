@@ -118,7 +118,7 @@ background-color: #f2f2f2;
   margin: 1% 2% 1% 2%;
   text-align: center;
   padding: 10px;
-  min-height: 300px;
+  min-height: 350px;
 }
 
 .team-card:hover {
@@ -155,8 +155,8 @@ text-align: center;
 }
 
 .team-card img {
-  width: 60%;
-  height: 60%;
-  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  border-radius: 30%;
   margin-bottom: 10px;
 }
