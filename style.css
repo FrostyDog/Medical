@@ -557,3 +557,41 @@ a .partner:hover{
   background-image: linear-gradient(rgba(250, 250, 250, 0.55), rgba(250, 250, 250, 0.65)), url("./images/aremit.jpg");
 
 }
+
+/* ABOUT */
+
+.about {
+
+  background-image: linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.9)), url("./images/skies-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.about-text {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-text div {
+margin: 30px;
+}
+
+.about-text div p {
+  margin: 10px;
+}
+
+.about-text div p img {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+.align-mid {
+  display: flex;
+  align-items: center;
+}
