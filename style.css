@@ -595,3 +595,131 @@ margin: 30px;
   display: flex;
   align-items: center;
 }
+
+
+/* Media - Mobile */
+
+@media screen and (max-width:600px) {
+
+  h1,h2,h3,h4,h5 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section div {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.top-bar .row, .top-bar .button, .top-bar p{
+  display: none;
+
+}
+
+header nav {
+  flex-direction: column;
+  padding: 0px;
+}
+
+header nav a {
+  border-top: solid 2px white;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.hero-text {
+    display: flex;
+    padding: 0px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-text a {
+  margin: 20px;
+}
+
+.hero-text p {
+  text-align: left;
+}
+
+.hero-list {
+  width: 100%;
+  display: block;
+}
+
+
+img {
+  display: none;
+}
+
+.benefit-cards{
+  justify-content: center;
+}
+
+.benefit-card {
+  width: 100%;
+  max-width: 275px;
+}
+
+.benefit-card p {
+  margin: 5px;
+  padding-bottom: 20px;
+}
+
+form input[type=submit] {
+margin-left: 23%;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #339DFF;
+  color: white;
+}
+
+footer .row {
+  flex-direction: column;
+  width: 100%;
+}
+footer .row .col {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .row .col a {
+  color: white;
+}
+
+footer a.button {
+display: none;
+
+}
+
+
+
+}
