@@ -596,6 +596,31 @@ margin: 30px;
   align-items: center;
 }
 
+.statistic {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.statistic-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px;
+  border: 2px solid lightblue;
+  padding: 20px;
+}
+
+.statistic-block ul {
+  margin-left: 20px;
+  font-size: 1.1em;
+}
+
+.statistic-block ul li {
+margin: 5px 0 ;
+}
+
 
 /* Media - Mobile */
 
