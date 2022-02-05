@@ -22,23 +22,24 @@ body {
 }
 
 p {
-  font-size: 14pt;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial;
+  /* font-family: Arial; */
   color: #434343;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   /* font-size: 2.7em; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3 {
-font-family: "Roboto";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 2.1em;
@@ -53,12 +54,13 @@ text-align: center;
 
 h5 {
   font-size: 1.4em;
+  margin-left: 2%;
 }
 
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 18px;
@@ -107,6 +109,24 @@ nav a:hover {
   align-items: center;
 }
 
+.row-about {
+  max-width: 80%;
+}
+
+
+.row-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.about-section-image {
+  max-width: 20%;
+  margin-right: 2%;
+}
+
+
 
 
 .col {
@@ -115,18 +135,32 @@ nav a:hover {
   justify-content: center;
 }
 
-.button {
+.consultation-button {
     background: #339DFF;
     color: #fff;
     text-decoration: none;
-    /* font-size: 13px; */
+    font-size: 20px;
     line-height: 38px;
     border-radius: 50px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    padding: 7px 13px;
-    /* min-width: 170px; */
     text-align: center;
+    width: fit-content;
+}
+
+.button {
+
+  background: #339DFF;
+  color: #fff;
+  text-decoration: none;
+  width: 220px;
+  font-size: 20px;
+  line-height: 38px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  
+  text-align: center;
 }
 
 .button:hover {
@@ -182,32 +216,33 @@ margin-left: 10%; */
 }
 
 .hero-text h2 {
-  margin-top: 10%;
+  margin-top: 5%;
   color: #339DFF;
   text-transform: uppercase;
 }
 
 .hero-text h4 {
-text-transform: uppercase;
+/* text-transform: uppercase; */
 font-size: 2em;
 color:black;
 }
 
 .hero-list{
-  padding-top: 3%;
-  text-transform: uppercase;
+  /* padding-top: 3%; */
+  /* text-transform: uppercase; */
 }
 
 .hero-text a{
-margin-top: 2%;
-margin-left: 20%;
-font-size: 17px;
+  margin: 5% 2%;
+/* margin-top: 2%; */
+/* margin-left: 20%; */
+font-size: 20px;
 padding: 10px 15px 10px 15px ;
 }
 
 .icons {
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 7%;
+  max-height: 7%;
   margin: 5px;
   }
 
@@ -218,19 +253,18 @@ padding: 10px 15px 10px 15px ;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin: 5% 0;
 }
 
 .about-lp p {
-    font-size: 1.5em;
     width: 80%;
 }
 
 .about-lp .row {
-    width: 80%;
+    /* width: 80%; */
 }
 
-.about-lp img {
-  width: 45%;
+.about-lp  {
   height: 45%;
   padding: 20px;
   border-radius: 400px;
@@ -248,6 +282,7 @@ padding: 10px 15px 10px 15px ;
   /* The image used */
    background-image: linear-gradient(rgba(150, 150, 150, 0.3), rgba(150, 150, 150, 0.3)), url("./images/brain-bg.png");
 
+
    /* Set a specific height */
    min-height: 500px;
 
@@ -257,7 +292,7 @@ padding: 10px 15px 10px 15px ;
    background-repeat: no-repeat;
    background-size: contain;
  }
-}
+
 
 .benefits h3 {
   font-size: 1.2em;
@@ -270,6 +305,13 @@ padding: 10px 15px 10px 15px ;
   justify-content: space-between;
 }
 
+.benefit-icon {
+  width: 28%;
+  height: 23%;
+  margin: 10px;
+  align-self: center;
+}
+
 
 .benefit-card {
   display: flex;
@@ -279,12 +321,14 @@ padding: 10px 15px 10px 15px ;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #339DFF;
-  border-radius: 20px;
+  /* border: 2px solid #339DFF; */
+  border-radius: 30px;
   margin: 3% 5% 3% 5%;
   text-align: center;
   padding: 10px;
   max-height:60%;
+  box-shadow: 0 4px 8px 0 rgba(10, 100, 218, 0.39), 0 6px 20px 0 rgba(15, 91, 255, 0.171);
+ 
 }
 
 @media screen and (max-width:1100px) {
@@ -293,7 +337,7 @@ margin: 1% 2% 1% 2%;
 }
 }
 
-.benefit-card img {
+.benefit-card  {
   width: 28%;
   height: 23%;
   margin: 10px;
@@ -381,13 +425,11 @@ padding-top: 10px;
 }
 
 
-.opinion img {
+.opinion  {
   border-radius: 100%;
-  width: 150px;
-height: 150px;
 }
 
-.testimonial img{
+.testimonial {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -660,7 +702,7 @@ margin: 30px;
   margin: 10px;
 }
 
-.about-text div p img {
+.about-text div p  {
   height: 50px;
   width: 50px;
   margin: 5px;
